@@ -19,6 +19,7 @@ class Server {
     this.app.set("views", path.join(__dirname, "views"));
     this.app.set("view engine", ".hbs");
     this.app.use(express.static("./public"));
+    this.app.use(express.static("./public/img"));
     hbs.registerPartials(__dirname + "/views/partials");
     hbs.registerPartial("footer", "{{footer}}");
     hbs.registerPartial("header", "{{header}}");
