@@ -30,12 +30,14 @@ class Server {
       res.render("home");
     });
 
-    this.app.get("/calculadora", (req, res) => {
-      res.render("calculadora");
+    this.app.get("/html_css", (req, res) => {
+      res.render("html_css");
     });
 
-    this.app.get("/poriedades", (req, res) => {
-      res.render("poriedades");
+    /* js_node */
+
+    this.app.get("/js_node", (req, res) => {
+      res.render("js_node");
     });
   }
 
